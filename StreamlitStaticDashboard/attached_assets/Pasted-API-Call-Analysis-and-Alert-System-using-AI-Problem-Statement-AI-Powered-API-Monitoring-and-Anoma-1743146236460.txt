@@ -1,0 +1,57 @@
+API Call Analysis and Alert System, using AI
+
+Problem Statement
+
+AI-Powered API Monitoring and Anomaly Detection System for Large-Scale Distributed Platforms
+
+Challenge:
+
+Develop an AI-powered monitoring solution for a large-scale, distributed multi-API software platform that generates vast amounts of log data from high-frequency API calls. The system spans across various environments including on-premises, cloud, and multi-cloud setups. APIs from these diverse environments can be part of a single request journey, adding complexity to monitoring and analysis. The system should automatically analyze API performance, detect anomalies, and provide predictive insights to maintain optimal platform health across this distributed architecture.
+
+Objectives:
+
+    Detect and analyze response time anomalies across all APIs, regardless of their hosting environment.
+    Identify and alert on error rate anomalies for individual APIs across different infrastructures.
+    Predict potential issues in end-to-end request journeys that may span multiple environments (on-premises, cloud, multi-cloud).
+    Forecast the impact of individual API issues on overall system reliability and user experience, considering the distributed nature of the platform.
+
+Technology:
+
+    Python
+    Database (SQL/No SQL) to store and retrieve the data
+    AWS if cloud technology is required
+    ELK if required for logs aggregation
+
+Data:
+
+    Data Preparation: Need to create a setup of programs that connect via APIs with varying log structures.
+    Improve Logs Quality: Enhance log levels or integrate new logging tools like OpenTelemetry.
+    Data Collection: Set up a logs aggregation system to centralize log storage.
+
+Design Considerations:
+
+    Data Analysis: Changes structure of logs if required
+    Alerting Mechanism: Proper alert should be created
+    Automation: Automatically add application in monitoring setup as soon as logs starts flowing
+    Visualization: Develop dashboards (preferably in Kibana).
+    Scalability: Support multiple instances using the same data source for horizontal scaling.
+    Predictive Analytics: It should also predict any upcoming failure in the API journey if logs show any symptom.
+    Environment-Aware Analysis: Should be capable to understand constraints of different hosting environments (on-premises, cloud, multi-cloud) in anomaly detection and prediction
+    Cross-Environment Correlation: Implement mechanisms to correlate events and anomalies across different environments to provide a holistic view of the distributed system's health
+
+Other Considerations:
+
+Specific Alert Types:
+
+    Response Time Anomalies: Spike Detection: Identify sharp increases in response time from the average (e.g., 200ms), accounting for potential latency introduced by cross-environment communication
+    Pattern Change Detection: Recognize long-term trends or pattern shifts indicating performance issues or architectural changes, considering the distributed system's complexity
+    Error Rate Anomalies: Error Tracking: Monitor API error occurrence in real-time across all environments
+    Alerting: Trigger alerts when error rates exceed the 99th percentile threshold, with context-aware sensitivity to different hosting environments.
+
+Benefits:
+
+The solution should provide real-time insights, predictive analytics, and actionable alerts to ensure platform performance and minimize service disruptions in high-traffic, multi-API environments across diverse hosting infrastructures. It should be capable of tracking complete request journeys and predicting failures across multiple environments.
+
+
+
+TELL ME SOMETHING UNIQUE AND EYE CATCHY THAT I CAN IMPLEMENT
