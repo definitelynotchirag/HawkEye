@@ -1,4 +1,4 @@
-Collecting workspace information# HAWKEYE: Advanced API Monitoring & Anomaly Detection System
+# HAWKEYE: Advanced API Monitoring & Anomaly Detection System
 
 Hawkeye is a comprehensive monitoring solution that provides real-time visibility into API performance across distributed environments. It leverages machine learning to detect anomalies in response times and error rates, and offers predictive analytics to help prevent service disruptions before they occur.
 
